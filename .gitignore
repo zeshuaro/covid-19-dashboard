@@ -163,3 +163,4 @@ sketch
 # End of https://www.gitignore.io/api/macos,visualstudiocode,node,react
 
 .env
+build/
