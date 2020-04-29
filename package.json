@@ -1,15 +1,15 @@
 {
-  "name": "@coreui/coreui-free-react-admin-template",
+  "name": "covid-19-dashboard",
   "version": "2.6.0",
-  "description": "CoreUI React Open Source Bootstrap 4 Admin Template",
-  "author": "Łukasz Holeczek",
-  "homepage": "https://coreui.io",
-  "copyright": "Copyright 2017-2019 creativeLabs Łukasz Holeczek",
+  "description": "Covid-19 Dashboard",
+  "author": "zeshuaro",
+  "homepage": "https://zeshuaro.github.io/covid-19-dashboard/",
+  "copyright": "Copyright 2020 zeshuaro",
   "license": "MIT",
   "private": true,
   "repository": {
     "type": "git",
-    "url": "git@github.com:coreui/coreui-free-react-admin-template.git"
+    "url": "https://github.com/zeshuaro/covid-19-dashboard.git"
   },
   "dependencies": {
     "@coreui/coreui": "^2.1.12",
@@ -39,6 +39,7 @@
     "simple-line-icons": "^2.4.1"
   },
   "devDependencies": {
+    "gh-pages": "^2.2.0",
     "react-scripts": "^3.4.1"
   },
   "scripts": {
@@ -47,7 +48,9 @@
     "test": "react-scripts test",
     "test:cov": "npm test -- --coverage --watchAll=false",
     "test:debug": "react-scripts --inspect-brk test --runInBand",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d build"
   },
   "bugs": {
     "url": "https://github.com/coreui/coreui-free-react-admin-template/issues"
