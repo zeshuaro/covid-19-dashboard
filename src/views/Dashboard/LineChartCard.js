@@ -85,7 +85,7 @@ class LineChartCard extends Component {
                 <div style={{ height: "350px", marginTop: "10px" }}>
                   {Charts.lineChart({
                     data: stats[statsType],
-                    height: 280,
+                    height: "100%",
                     key: this.state.dataType + statsType,
                   })}
                 </div>
