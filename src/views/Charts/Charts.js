@@ -3,6 +3,7 @@ import { Line } from "react-chartjs-2";
 
 const chartOptions = {
   responsive: true,
+  maintainAspectRatio: false,
   tooltips: {
     mode: "index",
     intersect: false,
