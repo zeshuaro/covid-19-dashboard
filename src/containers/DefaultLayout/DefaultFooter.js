@@ -11,7 +11,7 @@ class DefaultFooter extends Component {
   render() {
     return (
       <React.Fragment>
-        <span>Covid-19 Dashboard &copy; 2020 zeshuaro</span>
+        <span>COVID-19 Dashboard &copy; 2020 zeshuaro</span>
         <span className="ml-auto">
           Powered by <a href="https://coreui.io/react">CoreUI for React</a>
         </span>

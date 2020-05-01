@@ -12,7 +12,7 @@ class DefaultHeader extends Component {
     return (
       <React.Fragment>
         <h3 className="text-center" style={{ width: "100%", color: "grey" }}>
-          Covid-19 Dashboard
+          COVID-19 Dashboard
         </h3>
       </React.Fragment>
     );
