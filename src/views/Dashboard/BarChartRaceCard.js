@@ -73,14 +73,6 @@ class BarChartRaceCard extends Component {
       const data = stats.data;
       const len = data[Object.keys(data)[0]].length;
       const keys = Object.keys(data);
-      const colors = keys.reduce(
-        (res, item) => ({
-          ...res,
-          ...{ [item]: UtilService.randomColor() },
-        }),
-        {}
-      );
-
       const labels = keys.reduce((res, item) => {
         return {
           ...res,
@@ -103,7 +95,7 @@ class BarChartRaceCard extends Component {
           data={data}
           timeline={timeline}
           labels={labels}
-          colors={colors}
+          colors={stats.colors}
           len={len}
           timeout={400}
           delay={200}
@@ -122,7 +114,7 @@ class BarChartRaceCard extends Component {
             marginTop: "10px",
             borderRadius: "10px",
           }}
-          width={[15, 75, 10]}
+          width={[10, 80, 10]}
           maxItems={10}
         />
       );
